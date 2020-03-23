@@ -47,19 +47,22 @@
   text-align: center;
   display: block;
   padding: 15px 26px;
-  font-family: 'Rubik', sans-serif;
-  font-size: 16px;
+  /* font-family: 'Rubik', sans-serif; */
+  /* font-size: 16px; */
+  font: 400 16px 'Rubik', sans-serif;
   line-height: 19px;
   color: #4E5983;
   text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 9px;
 }
 
 /* Как сделать, чтобы при ховере не дергались блоки меню? */
 
 .link:hover {
   background: rgba(161, 127, 255, 0.11) ;
-  border-radius: 9px;
-  transition: all 0.3s ease;
+  
+  
   font-weight: 500;
 }
 
@@ -334,7 +337,7 @@
   content: '';
   display: block;
   width: 100%;
-  height: 280px;
+  height: 440px;
   background: linear-gradient(180deg, #EFF2FA 0%, rgba(255, 255, 255, 0) 96.57%);
   position: absolute;
   z-index: -2;
@@ -345,8 +348,281 @@
   position: relative;
 }
 
+.currency-title {
+  text-align: center;
+  margin-top: 140px;
+  padding-bottom: 60px;
+}
+
+.currency-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.currency-cart {
+  display: flex;
+  margin: 0 45px;
+  padding-bottom: 85px;
+  flex: 1;
+}
+
+.currency-cart:last-of-type {
+  padding-bottom: 160px;
+}
+
+.currency-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currency-img1 {
+  background-color: rgba(255, 168, 0, 0.1);
+}
+
+.currency-img2 {
+  background-color: rgb(83, 108, 195, 0.1);
+}
+
+.currency-img3 {
+  background-color: rgb(255, 187, 54, 0.1);
+}
+
+.currency-img4 {
+  background-color: rgb(43, 158, 47, 0.1);
+}
+
+.currency-img5 {
+  background-color: rgb(43, 158, 47, 0.1);
+}
+
+.currency-img6 {
+  background-color: rgb(3, 169, 244, 0.1);
+}
+
+.currency-img7 {
+  background-color: rgb(218, 37, 28, 0.1);
+}
+
+.currency-img8 {
+  background-color: rgb(255, 140, 0, 0.1);
+}
+
+.currency-cart-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.currency-cart-wrapper span:first-of-type {
+  font: 16px 'Rubik';
+  line-height: 19px;
+  color: #A4AABF;
+}
+
+.currency-cart-wrapper span:last-of-type {
+  font: 20px 'Ruubik';
+  line-height: 32px;
+  color: #160647;
+}
+
+/* Comments */
+
+.comments {
+  
+  padding-bottom: 95px;
+}
+
+.comments-title {
+  padding-bottom: 115px;
+  margin-left: 45px;
+}
 
 
+.comments-list {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+  margin-left: 45px;
+}
+
+.comments-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 488px;
+  min-height: 208px;
+  position: relative;
+}
+
+.comments-wrapper::before {
+  content: url(../img/comments.png);
+  position: absolute;
+  top: -93px;
+  left: -168px;
+  z-index: -1;
+}
+
+.comments-wrapper span {
+  font: 20px 'Rubik';
+  color: #160647;
+  line-height: 31px;
+}
+
+.comments-wrapper span span {
+  font: 14px 'Rubik';
+  line-height: 17px;
+  color: #838BA8;
+  margin-left: 30px;
+}
+
+.comments-btn-wrapper {
+  text-align: right;
+  margin-top: 47px;
+  padding-right: 10px;
+}
+
+.comments-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.comments-btn:last-of-type {
+  margin-left: 23px;
+}
+
+/* Converter Starter */
+
+.converter-starter .container {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 100px 64px 629px;
+  background: linear-gradient(163.51deg, rgb(86, 46, 194, 0.8) 29.59%, rgb(160, 126, 254, 0.8) 73.59%);
+  border-radius: 17px;
+  position: relative;
+}
+
+.converter-starter .container::before {
+  content: url(../img/converter-starter1.png);
+  position: absolute;
+  top: -181px;
+  left: -112px;
+  z-index: 1;
+}
+
+.converter-starter .container::after {
+  content: '';
+  display: block;
+  width: 1064px;
+  height: 341px;
+  background: linear-gradient(165.24deg, #562EC2 29.59%, #A07EFE 73.59%);
+  filter: blur(65px);
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  left: 87px;
+  border-radius: 17px;
+}
+
+.converter-starter-title {
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+
+.converter-starter-text {
+  color: rgb(255, 255, 255, 0.7);
+  padding-bottom: 50px;
+}
+
+.converter-starter-btn {
+  max-width: 225px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  z-index: 2;
+  padding: 0;
+  position: relative;
+}
+
+.converter-starter-btn::after {
+  content: '';
+  display: block;
+  width: 187px;
+  height: 50px;
+  position: absolute;
+  top: 23px;
+  left: 19px;
+  background: rgb(255, 255, 255, 0.9);
+  filter: blur(45px);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.converter-starter-btn:hover {
+  background: rgba(255, 255, 255);
+}
+
+.converter-starter-btn a {
+  display: block;
+  padding: 25px 0;
+  text-decoration: none;
+  font: 500 15px 'Rubik';
+  line-height: 19px;
+  color: #9F7DFD;
+}
+
+/*--------------------------
+          Footer
+--------------------------*/
+.footer {
+  margin-top: 137px;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.footer-nav a {
+  margin-left: 67px;
+  text-decoration: none;
+  font: 14px 'Rubik';
+  line-height: 17px;
+  color: #4E5983;
+}
+
+.footer-nav a:first-of-type {
+  margin: 0;
+}
+
+.footer-nets {
+  display: flex;
+}
+
+.footer-nets a {
+  display: block;
+  margin-left: 26px;
+}
+
+.footer-nets a:first-of-type {
+  margin: 0;
+}
+
+.footer-text {
+  font: 14px 'Rubik';
+  line-height: 17px;
+  color: #838BA8;
+  margin-left: 29px;
+  padding-bottom: 50px;
+}
 
 
 
